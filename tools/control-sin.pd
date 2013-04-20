@@ -1,0 +1,11 @@
+#N canvas 0 22 542 397 10;
+#X obj 384 233 metro \$1;
+#X obj 292 268 snapshot~;
+#X obj 401 196 loadbang;
+#X obj 308 327 outlet;
+#X text 276 137 output snapshotted sin wave for control;
+#X obj 298 195 osc~ \$1;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 0 0;
+#X connect 5 0 1 0;

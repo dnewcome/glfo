@@ -1,0 +1,42 @@
+#N canvas 721 99 641 417 10;
+#X obj 132 176 pix_texture;
+#X obj 104 72 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+20;
+#X obj 105 312 rectangle 10.6667 4;
+#X text 220 266 the way gem works \, height of 4 fills the y direction
+\, m the x direction is calculated based on the aspect ratio;
+#X obj 107 263 alpha 1;
+#X obj 246 177 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
+#X obj 108 205 colorRGB;
+#X obj 157 239 f 0;
+#X obj 181 215 loadbang;
+#X obj 240 215 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 243 158 fade scene in;
+#X obj 227 127 line 0 100;
+#X msg 281 102 1 1000;
+#X msg 229 100 0 1000;
+#X text 331 18 scene rectangle \, called a 'card' in glfo. This is
+used as an output rendering geo for compositing multiple scenes in
+a performance.;
+#X obj 204 22 inlet;
+#X obj 119 27 inlet;
+#X obj 262 20 inlet;
+#X obj 106 106 gemhead \$1;
+#X text 75 -22 usage - [scene-card <render order>];
+#X connect 0 0 6 0;
+#X connect 1 0 18 0;
+#X connect 4 0 2 0;
+#X connect 5 0 6 4;
+#X connect 6 0 4 0;
+#X connect 7 0 4 1;
+#X connect 8 0 7 0;
+#X connect 9 0 8 0;
+#X connect 11 0 5 0;
+#X connect 12 0 11 0;
+#X connect 13 0 11 0;
+#X connect 15 0 0 1;
+#X connect 16 0 1 0;
+#X connect 17 0 11 0;
+#X connect 18 0 0 0;

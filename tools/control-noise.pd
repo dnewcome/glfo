@@ -1,0 +1,10 @@
+#N canvas 0 22 757 626 10;
+#X obj 288 185 noise~;
+#X obj 374 223 metro \$1;
+#X obj 282 258 snapshot~;
+#X obj 391 186 loadbang;
+#X obj 298 317 outlet;
+#X connect 0 0 2 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 1 0;
