@@ -1,0 +1,22 @@
+#N canvas 597 423 450 300 10;
+#X obj 88 3 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 92 30 f 40;
+#X obj 94 63 note-trigger;
+#X obj 96 118 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 161 17 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 212 62 note-momentary;
+#X obj 206 -5 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 210 22 f 40;
+#X obj 215 122 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 4 0 2 1;
+#X connect 5 0 8 0;
+#X connect 6 0 7 0;
+#X connect 7 0 5 0;
