@@ -15,7 +15,11 @@ It is tested occasionally on PC versions of PD.
 
 # Usage
 
-Run live-set.pd with Pure Data.
+Run live-set.pd with Pure Data to see a simple sample set.
+
+# Installing
+
+Clone the GLfo repository and add the path to the PD search paths.
 
 # Future
 
