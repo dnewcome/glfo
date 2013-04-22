@@ -3,11 +3,11 @@
 #X obj 104 72 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 20;
 #X obj 105 312 rectangle 10.6667 4;
-#X text 220 266 the way gem works \, height of 4 fills the y direction
+#X text 101 332 the way gem works \, height of 4 fills the y direction
 \, m the x direction is calculated based on the aspect ratio;
 #X obj 107 263 alpha 1;
 #X obj 246 177 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1 256;
+-262144 -1 -1 0 256;
 #X obj 108 205 colorRGB;
 #X obj 157 239 f 0;
 #X obj 181 215 loadbang;
@@ -25,6 +25,7 @@ a performance.;
 #X obj 262 20 inlet;
 #X obj 106 106 gemhead \$1;
 #X text 75 -22 usage - [scene-card <render order>];
+#X obj 197 279 r glfo_card_width;
 #X connect 0 0 6 0;
 #X connect 1 0 18 0;
 #X connect 4 0 2 0;
@@ -40,3 +41,4 @@ a performance.;
 #X connect 16 0 1 0;
 #X connect 17 0 11 0;
 #X connect 18 0 0 0;
+#X connect 20 0 2 1;
