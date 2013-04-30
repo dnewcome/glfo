@@ -1,18 +1,11 @@
-#N canvas 683 98 450 300 10;
-#X obj 217 95 t b b;
-#X obj 304 194 f 1;
-#X obj 197 196 f 0;
+#N canvas 307 122 629 446 10;
 #X obj 221 46 inlet bang;
 #X obj 310 46 inlet delay;
 #X text 161 13 send float 1 out with bang;
-#X obj 197 164 del \$1;
 #X obj 237 250 outlet;
-#X text -51 159 if creation arg is not given \, it defaults to zero
+#X text -45 128 if creation arg is not given \, it defaults to zero
 ;
-#X connect 0 0 6 0;
-#X connect 0 1 1 0;
-#X connect 1 0 7 0;
-#X connect 2 0 7 0;
-#X connect 3 0 0 0;
-#X connect 4 0 6 1;
-#X connect 6 0 2 0;
+#X obj 260 97 glitch 1 0 \$1;
+#X connect 0 0 5 0;
+#X connect 1 0 5 1;
+#X connect 5 0 3 0;
