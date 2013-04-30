@@ -7,7 +7,7 @@
 #X obj 130 333 f 1;
 #X obj 183 200 == 0;
 #X obj 180 331 f 0;
-#X obj 143 272 switch2;
+#X obj 132 249 demux 1 2;
 #X connect 1 0 4 0;
 #X connect 1 1 6 0;
 #X connect 2 0 4 1;
