@@ -1,4 +1,4 @@
-#N canvas 19 423 450 300 10;
+#N canvas 0 205 851 471 10;
 #X obj 125 131 inlet;
 #X obj 455 171 inlet;
 #X text 121 106 trigger;
@@ -63,9 +63,12 @@ ramp.;
 #X text 301 169 ... do this;
 #X text 67 549 Negative triggers cause the output to jump to zero and
 then attack (instead of attacking from the current location).;
-#X text 228 21 Arguments: level \, attack time \, decay time \, sustain
+#X text 166 18 Arguments: level \, attack time \, decay time \, sustain
 level \, release time. A \, D \, and R are in msec and S is in percent.
 This patch is used as an abstraction in various examples.;
+#X text 565 19 typical usage - set level to 1 \, sustain to 100 (%)
+units are confusing \, level is 0..1 \, sustain is in p ercent 0..100
+;
 #X connect 0 0 3 0;
 #X connect 1 0 5 1;
 #X connect 1 0 18 1;
