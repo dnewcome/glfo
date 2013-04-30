@@ -1,0 +1,27 @@
+#N canvas 319 114 736 564 10;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array \$0-sum 882 float 0;
+#X coords 0 1 881 -1 200 130 1 0 0;
+#X restore 224 136 graph;
+#X text 223 274 ---- 0.02 seconds ----;
+#X obj 499 450 tabwrite~ \$0-sum;
+#X obj 424 426 sig~;
+#X obj 552 391 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 510 424 metro 200;
+#X obj 165 382 env-lfo;
+#X obj 161 341 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 156 436 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 -0 256;
+#X text 182 332 bang here to trigger envelope;
+#X obj 507 358 loadbang;
+#X text 180 254 -1;
+#X text 183 135 1;
+#X connect 3 0 2 0;
+#X connect 4 0 5 0;
+#X connect 5 0 2 0;
+#X connect 6 0 3 0;
+#X connect 6 0 8 0;
+#X connect 7 0 6 0;
+#X connect 10 0 5 0;

@@ -1,0 +1,40 @@
+#N canvas 473 77 736 564 10;
+#X obj 508 337 snapshot~;
+#X obj 606 315 metro 20;
+#X obj 349 98 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X obj 381 376 * 1;
+#X obj 365 292 lfo 0.1 100;
+#X obj 472 152 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 489 232 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 564 365 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 475 277 adsr 1 0 0 100 1;
+#X obj 474 189 bangone;
+#X obj 485 74 inlet trigger;
+#X obj 572 240 f 500;
+#X obj 574 203 loadbang;
+#X text 574 179 release time;
+#X obj 618 288 loadbang;
+#X obj 354 468 outlet;
+#X obj 639 212 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 136 37 env-lfo is a hybrid envelope and lfo disigned to produce
+interesting trigger effects;
+#X connect 0 0 3 1;
+#X connect 0 0 7 0;
+#X connect 1 0 0 0;
+#X connect 2 0 4 1;
+#X connect 3 0 15 0;
+#X connect 4 0 3 0;
+#X connect 5 0 9 0;
+#X connect 6 0 8 0;
+#X connect 8 0 0 0;
+#X connect 9 0 6 0;
+#X connect 10 0 5 0;
+#X connect 11 0 8 5;
+#X connect 12 0 11 0;
+#X connect 14 0 1 0;
+#X connect 16 0 11 0;
