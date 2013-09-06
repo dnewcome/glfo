@@ -1,0 +1,9 @@
+#N canvas 35 152 450 300 10;
+#X msg 62 131 lighting 1;
+#X obj 228 141 world_light;
+#X obj 192 45 inlet to_gemhead;
+#X obj 182 220 outlet to_gemwin;
+#X msg 321 98 \$1 \$2 \$3;
+#X connect 0 0 3 0;
+#X connect 2 0 1 0;
+#X connect 4 0 1 1;
