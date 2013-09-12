@@ -1,18 +1,14 @@
-#N canvas 544 251 622 447 10;
+#N canvas 408 241 622 447 10;
 #X obj 230 119 gemframebuffer;
-#X msg 317 67 dimen 800 300;
-#X msg 306 44 perspec -2.66 2.66 -1 1 1 20;
 #X text 301 11 need perspec in order to preserve aspect ratio of framebuffer
 image;
 #X obj 369 227 outlet tex;
 #X obj 167 221 outlet gemlist;
 #X obj 194 -4 inlet gemlist;
 #X obj 199 179 translateXYZ 0 0 -4;
-#X obj 89 68 r glfo_fb_specs;
-#X connect 0 0 7 0;
-#X connect 0 1 4 0;
-#X connect 1 0 0 0;
-#X connect 2 0 0 0;
+#X obj 302 49 r glfo_fb_specs;
+#X connect 0 0 5 0;
+#X connect 0 1 2 0;
+#X connect 4 0 0 0;
+#X connect 5 0 3 0;
 #X connect 6 0 0 0;
-#X connect 7 0 5 0;
-#X connect 8 0 0 0;

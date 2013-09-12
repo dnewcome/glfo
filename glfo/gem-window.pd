@@ -1,35 +1,37 @@
-#N canvas 46 88 1007 462 10;
-#X msg 47 108 fullscreen \$1;
-#X obj 48 48 vradio 15 1 0 3 empty empty empty 0 -8 0 10 -262144 -1
+#N canvas 139 46 689 462 10;
+#X msg 79 84 fullscreen \$1;
+#X obj 80 24 vradio 15 1 0 3 empty empty empty 0 -8 0 10 -262144 -1
 -1 0;
-#X obj 627 184 gemwin 60;
-#X msg 423 -18 offset 1280 -50;
-#X text 66 46 windowed;
-#X text 67 61 main LCD;
-#X text 67 76 external display;
-#X text 419 -45 for dual screen performances need dimen and offset
+#X obj 367 173 gemwin 60;
+#X msg 163 -29 offset 1280 -50;
+#X text 98 22 windowed;
+#X text 99 37 main LCD;
+#X text 99 52 external display;
+#X text 159 -56 for dual screen performances need dimen and offset
 ;
-#X obj 702 -158 inlet;
-#X obj 690 -115 route dev;
-#X text 710 -176 quick start in development mode by sending [dev( message
+#X obj 442 -169 inlet;
+#X obj 430 -126 route dev;
+#X text 450 -187 quick start in development mode by sending [dev( message
 ;
-#X obj 749 145 s glfo_fb_specs;
-#X obj 765 -116 route perf;
-#X msg 539 -21 offset 0 0;
-#X obj 754 69 dimen;
-#X msg 742 -17 800 300;
-#X msg 802 70 0 \, destroy \, create \, 1;
-#X obj 755 20 t b l;
-#X obj 180 163 lighting 1 1 1;
-#X obj 580 -96 t b l;
-#X msg 798 -16 1600 600;
+#X obj 489 134 s glfo_fb_specs;
+#X obj 505 -127 route perf;
+#X msg 279 -32 offset 0 0;
+#X obj 494 58 dimen;
+#X msg 482 -28 800 300;
+#X msg 542 59 0 \, destroy \, create \, 1;
+#X obj 495 9 t b l;
+#X obj 159 147 lighting 1 1 1;
+#X msg 538 -27 1600 600;
+#X obj 577 -128 route destroy;
+#X msg 603 -29 0 \, destroy;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 3 0 2 0;
 #X connect 8 0 9 0;
 #X connect 8 0 12 0;
+#X connect 8 0 20 0;
 #X connect 9 0 15 0;
-#X connect 12 0 20 0;
+#X connect 12 0 19 0;
 #X connect 13 0 2 0;
 #X connect 14 0 2 0;
 #X connect 14 1 11 0;
@@ -38,4 +40,6 @@
 #X connect 17 0 16 0;
 #X connect 17 1 14 0;
 #X connect 18 0 2 0;
-#X connect 20 0 17 0;
+#X connect 19 0 17 0;
+#X connect 20 0 21 0;
+#X connect 21 0 2 0;
