@@ -1,2 +1,11 @@
 simplify scene cards
 should be a way to make this easier and less repetitive
+
+
+.. using signals for scene fades ..
+should make this a separate subpatch .. could handle this stuff like mute/solo ..
+messages could be exculsive or not .. depending on whether we want to have different scenes playing at once
+
+one of the next things is to deal with snapshots ...
+I'm thinking that I could have each param be an instance of a 'parameter' that is animatable and controllable ...
+[probably we could use the same parameter idea for the scene transitions too 
