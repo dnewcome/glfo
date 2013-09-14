@@ -4,11 +4,13 @@
 image;
 #X obj 369 227 outlet tex;
 #X obj 167 221 outlet gemlist;
-#X obj 194 -4 inlet gemlist;
 #X obj 199 179 translateXYZ 0 0 -4;
 #X obj 302 49 r glfo_fb_specs;
-#X connect 0 0 5 0;
+#X obj 194 -4 inlet render;
+#X obj 206 37 gemhead;
+#X connect 0 0 4 0;
 #X connect 0 1 2 0;
-#X connect 4 0 0 0;
-#X connect 5 0 3 0;
-#X connect 6 0 0 0;
+#X connect 4 0 3 0;
+#X connect 5 0 0 0;
+#X connect 6 0 7 0;
+#X connect 7 0 0 0;
