@@ -1,4 +1,4 @@
-#N canvas 408 241 622 447 10;
+#N canvas 327 70 622 447 10;
 #X obj 230 119 gemframebuffer;
 #X text 301 11 need perspec in order to preserve aspect ratio of framebuffer
 image;
@@ -8,8 +8,10 @@ image;
 #X obj 302 49 r glfo_fb_specs;
 #X obj 194 -4 inlet render;
 #X obj 206 37 gemhead;
+#X obj 443 229 glfo/scene-card \$1;
 #X connect 0 0 4 0;
 #X connect 0 1 2 0;
+#X connect 0 1 8 1;
 #X connect 4 0 3 0;
 #X connect 5 0 0 0;
 #X connect 6 0 7 0;
