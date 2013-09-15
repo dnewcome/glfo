@@ -1,4 +1,4 @@
-#N canvas 201 282 755 330 10;
+#N canvas 188 170 755 330 10;
 #X msg 30 77 dev;
 #X text 30 8 rendering order of the cards is critical - higher numbers
 are rendered in front of lower values. rendering order of the scenes
@@ -7,10 +7,11 @@ themselves are of no consequence;
 #X msg 116 77 destroy;
 #X obj 31 107 glfo/gem-window;
 #X obj 411 34 vradio 15 1 0 3 empty empty empty 0 -8 0 10 -262144 -1
--1 1;
+-1 2;
 #X obj 419 179 s select_card;
 #X msg 177 78 dimen 120 200;
-#X obj 56 171 scenes/black-triangle 1;
+#X obj 56 171 scenes/triangle 1;
+#X obj 50 212 scenes/square 2;
 #X connect 0 0 4 0;
 #X connect 2 0 4 0;
 #X connect 3 0 4 0;
