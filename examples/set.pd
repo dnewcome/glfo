@@ -1,25 +1,18 @@
-#N canvas 220 168 755 330 10;
-#X obj 328 14 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X msg 43 30 dev;
-#X obj 260 91 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X msg 494 111 1 1000;
-#X msg 442 109 0 1000;
-#X msg 284 88 set 50;
-#X msg 351 14 set 1;
-#X text 43 -39 rendering order of the cards is critical - higher numbers
+#N canvas 201 282 755 330 10;
+#X msg 30 77 dev;
+#X text 30 8 rendering order of the cards is critical - higher numbers
 are rendered in front of lower values. rendering order of the scenes
 themselves are of no consequence;
-#X text 548 113 fade in/out;
-#X obj 357 53 scenes/black-triangle;
-#X obj 44 60 ../glfo/gem-window;
-#X obj 274 142 ../glfo/scene-card 10;
-#X connect 0 0 9 0;
-#X connect 1 0 10 0;
-#X connect 2 0 11 0;
-#X connect 3 0 11 2;
-#X connect 4 0 11 2;
-#X connect 5 0 11 0;
-#X connect 6 0 9 0;
-#X connect 9 0 11 1;
+#X msg 70 77 perf;
+#X msg 116 77 destroy;
+#X obj 31 107 glfo/gem-window;
+#X obj 411 34 vradio 15 1 0 3 empty empty empty 0 -8 0 10 -262144 -1
+-1 1;
+#X obj 419 179 s select_card;
+#X msg 177 78 dimen 120 200;
+#X obj 56 171 scenes/black-triangle 1;
+#X connect 0 0 4 0;
+#X connect 2 0 4 0;
+#X connect 3 0 4 0;
+#X connect 5 0 6 0;
+#X connect 7 0 4 0;
