@@ -1,0 +1,3 @@
+[submodule "lib/button-masher"]
+	path = lib/button-masher
+	url = https://github.com/dnewcome/button-masher.git
