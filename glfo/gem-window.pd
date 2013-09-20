@@ -1,4 +1,4 @@
-#N canvas 139 46 768 462 10;
+#N canvas 78 263 768 462 10;
 #X msg 79 84 fullscreen \$1;
 #X obj 80 24 vradio 15 1 0 3 empty empty empty 0 -8 0 10 -262144 -1
 -1 0;
@@ -25,6 +25,8 @@
 #X obj 577 -128 route destroy;
 #X msg 603 -29 0 \, destroy;
 #X obj 664 -128 route dimen;
+#X msg 472 214 frame 100;
+#X text 469 191 need frame message for blur effect;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 3 0 2 0;
@@ -46,3 +48,4 @@
 #X connect 20 0 21 0;
 #X connect 21 0 2 0;
 #X connect 22 0 17 0;
+#X connect 23 0 2 0;

@@ -10,3 +10,33 @@ one of the next things is to deal with snapshots ...
 
 # refactoring
 gem-window should probably take dimen and be wrapped with some macro that does dev/perf stuff
+
+# params
+params are the fundamental mechanism of control for a scene..... we should be able to  some basic
+things like set a param and send it a message for some different kinds of animations such as
+linear fades and glitching
+
+also, the ability to save a snapshot of the current vaules is important ... not sure if this
+is more or less important than being able to set a snapshot, but I would like the ability
+to save and load these things from a file, as hard coded messages seem to be kind of clunky
+when there are a lot of messages.
+
+possibly we shouldn't put the different animations in the params themselves.. not sure about this.
+
+
+have params register themselves on creation? currently there isn't much of a way to manage all
+the messages that come from teh params... they come in async and we'd like to have a row
+per snapshot.
+
+currently not worrying about file based snapshots. Current workflow is to just snap things to console and create 
+messages from them manually to recall snapshots.
+
+other things like animations maybe are more important.
+
+
+# snapshots
+maybe send an easy way for resetting the snapshot list instead of having to do it manually.
+
+# blur
+full scene blur. Can be done with shaders or pix2tex. 
+Also per-card blur . Can be done using pix_snap. 

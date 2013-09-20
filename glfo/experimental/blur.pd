@@ -1,0 +1,32 @@
+#N canvas 0 22 700 680 10;
+#X obj 119 226 pix_snap2tex;
+#X msg 164 202 0 0;
+#X obj 164 179 t b b;
+#X obj 119 186 t b a;
+#X obj 119 264 alpha;
+#X floatatom 292 254 5 0 0 0 - - -;
+#X obj 300 84 vsl 15 128 0 1 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 119 288 colorRGB 1 1 1 0.888;
+#X obj 164 160 loadbang;
+#X obj 119 138 gemhead 10;
+#X obj 119 332 rectangle 10.66 4;
+#X text 100 58 snap size must be same as frame size;
+#X msg 210 201 789 300;
+#X obj 126 92 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 155 89 on/off;
+#X connect 0 0 4 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 0;
+#X connect 2 1 12 0;
+#X connect 3 0 0 0;
+#X connect 3 1 0 0;
+#X connect 4 0 7 0;
+#X connect 5 0 7 4;
+#X connect 6 0 5 0;
+#X connect 7 0 10 0;
+#X connect 8 0 2 0;
+#X connect 9 0 3 0;
+#X connect 12 0 0 2;
+#X connect 13 0 9 0;
