@@ -40,3 +40,12 @@ maybe send an easy way for resetting the snapshot list instead of having to do i
 # blur
 full scene blur. Can be done with shaders or pix2tex. 
 Also per-card blur . Can be done using pix_snap. 
+
+# framebuffers ..
+using pix_snap vs using pix_snap2tex
+snap2tex takes the toplevel framebuffer alwasys I think.. pix_snap allows us to use a framebuffer 
+that isn't attached to the rendering pipleline. I want to be able to snapshot things that
+aren't necessarily the final output of the system.
+
+use pix_buffer to store snaps of individual scenes
+maybe this could be a better way of doing the scene card thing
