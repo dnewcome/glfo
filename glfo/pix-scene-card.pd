@@ -1,20 +1,57 @@
-#N canvas 447 131 636 533 10;
-#X obj 142 221 pix_texture;
-#X text 291 61 fetch framebuffer-pix;
-#X msg 292 89 0;
-#X obj 170 86 t a b;
-#X obj 144 53 gemhead \$1;
-#X obj 144 122 pix_buffer_read \$1-framebuffer;
-#X obj 142 269 rectangle 10.667 4;
-#X obj 264 244 r glfo_card_width;
-#X obj 142 189 pix_color;
-#X msg 187 154 1 0 0 1;
+#N canvas 137 54 1092 643 10;
+#X obj 444 304 pix_texture;
+#X obj 494 172 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 495 412 rectangle 10.6667 4;
+#X text 491 432 the way gem works \, height of 4 fills the y direction
+\, m the x direction is calculated based on the aspect ratio;
+#X obj 497 363 alpha 1;
+#X obj 636 277 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 477 329 colorRGB;
+#X obj 547 339 f 0;
+#X obj 571 315 loadbang;
+#X obj 630 315 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 633 258 fade scene in;
+#X msg 671 202 1 1000;
+#X msg 619 200 0 1000;
+#X text 724 94 scene rectangle \, called a 'card' in glfo. This is
+used as an output rendering geo for compositing multiple scenes in
+a performance.;
+#X obj 509 127 inlet;
+#X obj 652 120 inlet;
+#X obj 462 198 gemhead \$1;
+#X text 465 78 usage - [scene-card <render order>];
+#X obj 587 379 r glfo_card_width;
+#X obj 536 160 > 0;
+#X obj 797 143 r select_card;
+#X obj 792 170 sel \$1;
+#X obj 617 227 line 0 10;
+#X msg 524 215 0;
+#X obj 402 212 t a b;
+#X obj 376 248 pix_buffer_read \$1-framebuffer;
 #X connect 0 0 6 0;
-#X connect 2 0 5 1;
-#X connect 3 0 5 0;
-#X connect 3 1 2 0;
-#X connect 4 0 3 0;
-#X connect 5 0 8 0;
-#X connect 7 0 6 1;
-#X connect 8 0 0 0;
-#X connect 9 0 8 1;
+#X connect 1 0 16 0;
+#X connect 4 0 2 0;
+#X connect 5 0 6 4;
+#X connect 6 0 4 0;
+#X connect 7 0 4 1;
+#X connect 8 0 7 0;
+#X connect 9 0 8 0;
+#X connect 11 0 22 0;
+#X connect 12 0 22 0;
+#X connect 14 0 1 0;
+#X connect 15 0 22 0;
+#X connect 16 0 24 0;
+#X connect 18 0 2 1;
+#X connect 19 0 1 0;
+#X connect 20 0 21 0;
+#X connect 21 0 11 0;
+#X connect 21 1 12 0;
+#X connect 22 0 5 0;
+#X connect 22 0 19 0;
+#X connect 23 0 25 1;
+#X connect 24 0 25 0;
+#X connect 24 1 23 0;
+#X connect 25 0 0 0;
