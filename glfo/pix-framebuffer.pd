@@ -1,0 +1,24 @@
+#N canvas 0 22 636 533 10;
+#X obj 146 235 pix_texture;
+#X obj 147 328 square 3;
+#X obj 148 276 rotateXYZ;
+#X floatatom 183 256 5 0 0 0 - - -;
+#X text 291 61 fetch framebuffer-pix;
+#X text 269 170 apply some nifty FX;
+#X obj 146 204 pix_kaleidoscope;
+#X msg 292 89 0;
+#X obj 170 86 t a b;
+#X obj 144 53 gemhead \$1;
+#X obj 144 122 pix_buffer_read \$1-framebuffer;
+#X obj 159 149 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 2;
+#X connect 6 0 0 0;
+#X connect 7 0 10 1;
+#X connect 8 0 10 0;
+#X connect 8 1 7 0;
+#X connect 9 0 8 0;
+#X connect 10 0 6 0;
+#X connect 11 0 6 0;
