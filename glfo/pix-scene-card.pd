@@ -31,6 +31,10 @@ a performance.;
 #X msg 524 215 0;
 #X obj 402 212 t a b;
 #X obj 376 248 pix_buffer_read \$1-framebuffer;
+#X obj 262 328 spigot;
+#X text 258 275 rendering turned off by default to prevent display
+artifacts when fading;
+#X text 264 308 enable to use;
 #X connect 0 0 6 0;
 #X connect 1 0 16 0;
 #X connect 4 0 2 0;
@@ -54,4 +58,5 @@ a performance.;
 #X connect 23 0 25 1;
 #X connect 24 0 25 0;
 #X connect 24 1 23 0;
-#X connect 25 0 0 0;
+#X connect 25 0 26 0;
+#X connect 26 0 0 0;
