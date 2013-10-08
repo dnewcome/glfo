@@ -2,21 +2,16 @@ simplify scene cards
 should be a way to make this easier and less repetitive
 
 
-.. using signals for scene fades ..
+# scene transitions
 should make this a separate subpatch .. could handle this stuff like mute/solo ..
 messages could be exculsive or not .. depending on whether we want to have different scenes playing at once
-
-one of the next things is to deal with snapshots ...
+also, could these just be params, with some kind of mutex or crossfade property?
 
 # refactoring
-gem-window should probably take dimen and be wrapped with some macro that does dev/perf stuff
+gemwindow should be wrapped with some macro that does dev/perf stuff
 
 # params
-params are the fundamental mechanism of control for a scene..... we should be able to  some basic
-things like set a param and send it a message for some different kinds of animations such as
-linear fades and glitching
-
-also, the ability to save a snapshot of the current vaules is important ... not sure if this
+The ability to save a snapshot of the current vaules is important ... not sure if this
 is more or less important than being able to set a snapshot, but I would like the ability
 to save and load these things from a file, as hard coded messages seem to be kind of clunky
 when there are a lot of messages.
@@ -32,27 +27,11 @@ currently not worrying about file based snapshots. Current workflow is to just s
 messages from them manually to recall snapshots.
 
 other things like animations maybe are more important.
-
+look at tweening libraries
 
 # snapshots
 maybe send an easy way for resetting the snapshot list instead of having to do it manually.
 
-# blur
-full scene blur. Can be done with shaders or pix2tex. 
-Also per-card blur . Can be done using pix_snap. 
-
-# framebuffers ..
-using pix_snap vs using pix_snap2tex
-snap2tex takes the toplevel framebuffer alwasys I think.. pix_snap allows us to use a framebuffer 
-that isn't attached to the rendering pipleline. I want to be able to snapshot things that
-aren't necessarily the final output of the system.
-
-use pix_buffer to store snaps of individual scenes
-maybe this could be a better way of doing the scene card thing
-
 # rotate/translate for scene card
 factor common scene translations into the card
-
-# performance note
-need to allow both methods of rendering I think. Using the old framebuffer was much more efficient.
 

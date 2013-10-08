@@ -1,4 +1,4 @@
-#N canvas 78 263 768 462 10;
+#N canvas 91 265 768 462 10;
 #X msg 79 84 fullscreen \$1;
 #X obj 80 24 vradio 15 1 0 3 empty empty empty 0 -8 0 10 -262144 -1
 -1 0;
@@ -20,22 +20,22 @@
 #X msg 482 -28 800 300;
 #X msg 542 59 0 \, destroy \, create \, 1;
 #X obj 495 9 t b l;
-#X obj 159 147 lighting 1 1 1;
 #X msg 538 -27 1600 600;
 #X obj 577 -128 route destroy;
 #X msg 603 -29 0 \, destroy;
 #X obj 664 -128 route dimen;
 #X msg 472 214 frame 100;
 #X text 469 191 need frame message for blur effect;
+#X obj 159 147 lighting 1 1 1;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 3 0 2 0;
 #X connect 8 0 9 0;
 #X connect 8 0 12 0;
-#X connect 8 0 20 0;
-#X connect 8 0 22 0;
+#X connect 8 0 19 0;
+#X connect 8 0 21 0;
 #X connect 9 0 15 0;
-#X connect 12 0 19 0;
+#X connect 12 0 18 0;
 #X connect 13 0 2 0;
 #X connect 14 0 2 0;
 #X connect 14 1 11 0;
@@ -43,9 +43,9 @@
 #X connect 16 0 2 0;
 #X connect 17 0 16 0;
 #X connect 17 1 14 0;
-#X connect 18 0 2 0;
-#X connect 19 0 17 0;
-#X connect 20 0 21 0;
-#X connect 21 0 2 0;
-#X connect 22 0 17 0;
-#X connect 23 0 2 0;
+#X connect 18 0 17 0;
+#X connect 19 0 20 0;
+#X connect 20 0 2 0;
+#X connect 21 0 17 0;
+#X connect 22 0 2 0;
+#X connect 24 0 2 0;
