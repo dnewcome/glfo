@@ -1,7 +1,3 @@
-simplify scene cards
-should be a way to make this easier and less repetitive
-
-
 # scene transitions
 should make this a separate subpatch .. could handle this stuff like mute/solo ..
 messages could be exculsive or not .. depending on whether we want to have different scenes playing at once
@@ -9,6 +5,7 @@ also, could these just be params, with some kind of mutex or crossfade property?
 
 # refactoring
 gemwindow should be wrapped with some macro that does dev/perf stuff
+glitch might not be very useful anymore, slated for removal
 
 # params
 The ability to save a snapshot of the current vaules is important ... not sure if this
@@ -29,9 +26,5 @@ messages from them manually to recall snapshots.
 other things like animations maybe are more important.
 look at tweening libraries
 
-# snapshots
-maybe send an easy way for resetting the snapshot list instead of having to do it manually.
-
-# rotate/translate for scene card
-factor common scene translations into the card
-
+# lfo
+need to wrap up modulation sources into lfo. Not sure if this means envelopes and animations also.
