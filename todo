@@ -9,6 +9,8 @@ also, could these just be params, with some kind of mutex or crossfade property?
 
 # refactoring
 gemwindow should be wrapped with some macro that does dev/perf stuff
+folder structure isn't right for including using PD folder refs. Need
+to put lib folder under glfo otherwise we will end up with naming collisions probably.
 
 # params
 The ability to save a snapshot of the current vaules is important ... not sure if this

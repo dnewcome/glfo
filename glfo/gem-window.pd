@@ -27,6 +27,7 @@
 #X msg 472 214 frame 100;
 #X text 469 191 need frame message for blur effect;
 #X obj 159 147 lighting 1 1 1;
+#X msg 198 1 offset 1440 -50;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 3 0 2 0;
@@ -49,3 +50,4 @@
 #X connect 21 0 17 0;
 #X connect 22 0 2 0;
 #X connect 24 0 2 0;
+#X connect 25 0 2 0;
